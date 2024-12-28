@@ -1,0 +1,185 @@
+ 
+    .container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+    grid-template-rows: 40px 90px 30px 50px auto 50px;
+    grid-template-areas:
+    "header header header search"
+    "title title title title"
+    "top top top top"
+    "side LastPostSmall LastPostSmall LastPostSmall"
+    "side main main main"
+    "side ft ft ft";
+    }
+    
+    #titles {
+      grid-area: title;
+      border-bottom: 1px solid rgb(234, 228, 228);
+      border-top: 1px solid rgb(234, 228, 228);
+      position: relative;
+      background-image: url('../assets/secimgBMP.bmp');
+      background-size: cover;
+      background-position: center;
+      
+    }
+    
+    #tops {
+      grid-area: top;
+      border-bottom: 1px solid rgb(234, 228, 228);
+      align-items: center;
+      background-color: rgb(212, 218, 221);  width: 100%;
+    
+    }
+    
+    #tops a {
+      margin: 0 3px;
+      border-left: 1px solid rgb(234, 228, 228);
+      padding: 3px;
+      font-weight: bold;
+    }
+    #LastPostSmall{
+      grid-area: LastPostSmall;
+      border-bottom: 2px solid rgb(164, 173, 192);
+    
+    }
+    #main {
+      grid-area: main;
+      position: relative;
+      display: grid; 
+      grid-template-columns: repeat(auto-fill, minmax(300px, 3fr)); 
+      gap: 20px; 
+    }
+    #side {
+        grid-area: side;
+        border: 2px solid #ccc;
+        text-align: center;
+        background-color: #e2e4e2;
+      }
+    
+    
+
+    
+    .box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .box2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 0;
+      position: sticky;
+    }
+    
+    .BlogName {
+      font-family: "Arizonia", cursive;
+      font-size: 25px;
+      color: rgb(0, 0, 0);
+    }
+    
+    
+  
+    
+    .loginSignUp {
+      margin: 1px 0;
+    }
+    
+    .loginSignUp button {
+      font-size: 13px;
+      border: none;
+      border-radius: 25px;
+      background-color: #b0daed;
+      color: white;
+      padding: 5px 10px;
+      cursor: pointer;
+    
+    }
+    
+    .loginSignUp button:hover {
+      background-color: #333;
+    }
+    
+    #tops a:hover {
+      color: #337898;
+    }
+    
+    #LastPostSmall h3 {
+      font-weight: bold;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      color: rgb(18, 48, 129);
+    }
+    
+    #LastPostSmall .small-text {
+      position: absolute;
+      font-size: 0.5rem;
+      font-weight: bold;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    
+    .date {
+    font-size: 9px; 
+    color: #074fb3;
+    font-weight: bold;
+    top: 28px;
+    left:21px;
+    position: absolute;
+    
+    }
+    .BlogText {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position: absolute;
+    color: #000000;
+    font-size: 1rem;
+    padding-left: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left; 
+    left: 1px; 
+    right: auto;
+    top: 45px; 
+    width: 90%; 
+    }
+    
+    .cardContent h2 {
+    font-size: 1.2rem; 
+    color: #333;
+    top: 0;
+    position: absolute;
+    }
+    
+    .overlayBox {
+    top: 70%;
+    width: 90%; 
+    height: 60%; 
+    background-color: rgb(255, 255, 255);
+    transform: translate(0%, -10%); 
+    }
+    .smallLine {
+    border: none;
+    border-top: 2px solid #a0bae3;
+    width: 30%;
+    margin-left: 0; 
+    margin-top: 30px;
+    }
+    .cardContent a{
+    position: absolute;
+    cursor: pointer;
+    color: rgb(97, 130, 182);
+    font-weight: bold;
+    margin-top:70px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .cardContent a:hover{
+    color: rgb(170, 159, 180);
+    }
+    
+    
+    
+  

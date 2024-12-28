@@ -1,0 +1,236 @@
+
+.container {
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 40px auto 100px auto 50px;
+    grid-template-areas:
+        "header header search"
+        "title title sidethree"
+        "top top side"
+        "main main main"
+        "ft ft ft";
+
+}
+
+
+#titles {
+    grid-area: title;
+    margin-left: 80px;
+    margin-right: 20px;
+}
+
+#titles a {
+    font-size: 15px;
+    padding: 10px;
+    color: #912a6d;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#titles a:hover {
+    color: #000;
+
+}
+
+.imgPost {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border: 2px solid #333;
+}
+
+.titleOfPost {
+    font-family: "Anton SC", sans-serif;
+    padding-left: 5px;
+    font-size: 20px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+}
+
+.category {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 5px;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+
+
+
+#side {
+    grid-area: side;
+    border: 2px solid #ccc;
+    text-align: center;
+    background-color: #e2e4e2;
+}
+
+
+#tops {
+    grid-area: top;
+    background-color: #d2d7df;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
+    gap: 20px;
+    padding: 20px;
+    margin-left: 80px;
+
+}
+
+
+#main {
+    grid-area: main;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(64, 63, 66);
+    margin-left: 80px;
+
+}
+
+#side h3 {
+    font-size: 1.5em;
+    font-family: "Kristi", cursive;
+    font-style: normal;
+
+}
+
+#sideThree {
+    grid-area: sidethree;
+    margin: 10px 40px 10px 0px;
+    padding: 1px 5px;
+}
+
+.sideImage {
+    width: 110%;
+    height: auto;
+    padding: 10px;
+    background-color: #a7a7a7;
+
+}
+
+.sideTitle {
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 2px;
+    text-align: center;
+    width: 130%;
+}
+
+.sideText {
+    width: 130%;
+    font-style: italic;
+    font-size: 12px;
+    font-weight: bold;
+    color: #000000;
+    background-color: rgb(254, 255, 255);
+}
+
+.BlogText {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position: absolute;
+    color: #000000;
+    font-size: 1rem;
+    padding-left: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+    left: 1px;
+    right: auto;
+    top: 45px;
+    width: 90%;
+}
+
+.cardContent h2 {
+    font-size: 1.2rem;
+    color: #333;
+    top: 0;
+    position: absolute;
+}
+
+.overlayBox {
+    top: 70%;
+    width: 90%;
+    height: 60%;
+    background-color: rgb(255, 255, 255);
+    transform: translate(0%, -10%);
+}
+
+.smallLine {
+    border: none;
+    border-top: 2px solid #a0bae3;
+    width: 30%;
+    margin-left: 0;
+    margin-top: 30px;
+}
+
+.cardContent a {
+    position: absolute;
+    cursor: pointer;
+    color: rgb(97, 130, 182);
+    font-weight: bold;
+    margin-top: 70px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.cardContent a:hover {
+    color: rgb(170, 159, 180);
+}
+
+.date {
+    font-size: 9px;
+    color: #074fb3;
+    font-weight: bold;
+    top: 28px;
+    left: 21px;
+    position: absolute;
+
+}
+
+
+
+
+
+#main h3 {
+    padding-left: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+#main h4 {
+    padding-left: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#main h5 {
+    padding-left: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#main p {
+    padding-left: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 13px;
+}
+
+#main ul {
+    font-size: 12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#main ol {
+    font-size: 12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#main ol li {
+    padding: 2px;
+}
+
+#main span {
+    font-weight: bold;
+}
+

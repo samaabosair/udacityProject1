@@ -1,0 +1,117 @@
+body {
+    background-color: rgb(238, 238, 245);
+}
+
+.container {
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    display: grid;
+    gap: 5px;
+}
+
+#side ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#side li {
+    margin-bottom: 8px;
+}
+
+#side a:hover {
+    color: #b0daed;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.nav a {
+    margin: 0 3px;
+    font-size: 14px;
+}
+
+.nav a:hover {
+    color: #912a6d;
+}
+
+.BlogText {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #000000;
+    font-size: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+}
+
+.cardStyle {
+    height: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgb(134, 143, 162);
+    background-color: white;
+}
+
+.cardImage {
+    width: 100%;
+    height: 200px;
+}
+
+.cardImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.cardContent {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: left;
+}
+
+.cardContent h2 {
+    font-size: 1.2rem;
+    color: #333;
+    background-color: white;
+}
+
+.cardContent a {
+    cursor: pointer;
+    color: rgb(97, 130, 182);
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.cardContent button {
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 70px;
+    border: none;
+    background-color: #90add6;
+border-radius: 25px;
+color: rgb(255, 255, 255);
+padding: 5px 10px;
+cursor: pointer;
+font-size: 13px;
+
+}
+.cardContent a:hover {
+    color: rgb(170, 159, 180);
+}
+.cardContent button:hover{
+background-color: rgb(86, 118, 213);
+color: rgb(170, 159, 180);
+
+}
+.date {
+    font-size: 9px;
+    color: #074fb3;
+    font-weight: bold;
+}
